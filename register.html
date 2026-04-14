@@ -10,7 +10,7 @@
 
     <h2>Register</h2>
 
-    <form action="#">
+   <form onsubmit="registerSuccess(event)">
         <label>Name:</label>
         <input type="text" required>
 
@@ -27,6 +27,12 @@
     <p><a href="index.html">Back to Home</a></p>
 
 </div>
-
+<script>
+function registerSuccess(event) {
+    event.preventDefault();
+    alert("Registered Successfully ✅");
+    window.location.href = "login.html";
+}
+</script>
 </body>
 </html>
